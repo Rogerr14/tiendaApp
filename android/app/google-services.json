@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670117112036",
+    "project_id": "comisariato-f4443",
+    "storage_bucket": "comisariato-f4443.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670117112036:android:6754f096ef23576b3ee4f1",
+        "android_client_info": {
+          "package_name": "com.example.comisariato"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Rp2lZBbi48xsPuf0FdymVq7xh2WXOcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
