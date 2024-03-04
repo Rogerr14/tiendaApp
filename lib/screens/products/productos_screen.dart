@@ -1,10 +1,10 @@
-import 'package:comisariato/services/producto_provider.dart';
+
 import 'package:flutter/material.dart';
 
+import 'package:comisariato/services/producto_provider.dart';
 import 'package:comisariato/utils/validator/validator_forms.dart' as utils;
 import 'package:comisariato/utils/constants/constants.dart';
 import 'package:comisariato/utils/widgets/side_menu.dart';
-import 'package:provider/provider.dart';
 
 class ProductsScreen extends StatelessWidget {
   static String name = 'productsScreen';
@@ -14,7 +14,7 @@ class ProductsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final productProvider = context.watch<ProductProvider>();
+    final productProvider = ProductProvider();
     // final productoProvider = context.watch<ProductProvider>();
     final nameController = TextEditingController();
     final priceController = TextEditingController();

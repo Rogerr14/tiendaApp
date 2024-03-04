@@ -6,7 +6,7 @@ final route = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(
-      path: '/login' ,
+      path: '/' ,
       name: LoginPage.name,
       builder:  (context, state) => const LoginPage(),
       ),
@@ -16,7 +16,7 @@ final route = GoRouter(
       builder:  (context, state) => const RegisterPage(),
     ),
     GoRoute(
-      path: '/' ,
+      path: '/homeScreen' ,
       name: HomeScreen.name,
       builder:  (context, state) => const HomeScreen(),
     ),

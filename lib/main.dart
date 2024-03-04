@@ -1,10 +1,12 @@
+
+import 'package:comisariato/services/provider.dart';
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+
+import 'package:comisariato/firebase_options.dart';
 import 'package:comisariato/config/Routes/app_router.dart';
 import 'package:comisariato/config/user_preferences/user_preferences.dart';
-import 'package:comisariato/firebase_options.dart';
-import 'package:comisariato/services/producto_provider.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,10 +23,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [//ChangeNotifierProvider(create: ()=> LoginProvider()),
-      ChangeNotifierProvider(create: (_) => ProductProvider()),
-      ],
+    return Provider(
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         title: 'Material App',

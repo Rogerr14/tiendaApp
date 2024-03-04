@@ -15,8 +15,12 @@ class MenuItem {
 }
 
 const appMenuItems = <MenuItem>[
-  MenuItem(title: 'Detalles Producto', 
-  subTitle: 'Informacion', 
-  link: '/', 
+  MenuItem(title: 'Inicio', 
+  subTitle: 'Pantalla principal', 
+  link: '/homeScreen', 
+  icon: Icons.density_small_outlined),
+  MenuItem(title: 'Crear Producto', 
+  subTitle: 'Agrega un producto nuevo', 
+  link: '/productsScreen', 
   icon: Icons.density_small_outlined)
 ];
